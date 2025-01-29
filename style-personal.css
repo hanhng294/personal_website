@@ -146,31 +146,32 @@ body {
     margin: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
     row-gap: 20px;    
 }
 .activities-img {
-    height: 350px;
-    width: 500px;
+    height: 90%;
+    width: 100%;
 }
 .activities-img:hover {
     filter: brightness(50%);
 }
-.activities-img:hover+ .act-content {
+.activities-img:hover + .act-content {
     display:block;
     color: white;
 }
 .activity-wrapper {
     position: relative;
+    width: 70%;
 }
 .act-content {
     position: absolute;
     top: 50%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     display: none;
-    line-height: 25px;
+    line-height: 20px;
+    width: 80%;
 }
 .contact-items {
     margin: 50px;
