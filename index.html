@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grace's page</title>
+        <link rel = "stylesheet" href = "style-personal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class = "nav-bar">
+            <div class = "nav-title">Grace Nguyen</div>
+            <div class = "nav-item" onclick="scrollToAbout()">About</div>
+            <div class = "nav-item" onclick = "scrollToProject()">Projects</div>
+            <div class = "nav-item" onclick = "scrollToWork()">Work Experience</div>
+            <div class = "nav-item" onclick = "scrollToActivity()">Activities</div>
+            <div class = nav-item onclick = "scrollToContact()">Contact</div>
+            <hr class = "nav-line">
+        </nav>
+        <div class = "about" id = "about-section">
+            <img src = "profile.png" class = "about-pic">
+            <div class = "about-text">
+                <h4 class = "about-title">Hi! I'm Grace Nguyen</h4>
+                <p>I am based in Sydney, graduated from UNSW with a Masters in Data Science and Decisions. I enjoy coding and 
+                 turning raw numbers into meaningful insights. Think of me as a digital detective - solving puzzles with code and curiosity!
+                My tech stacks are Python, SQL, R, PowerBI and I love experimenting with creative projects!
+                </p>
+            <button class = "about-button" onclick= "scrollToContact()">Get in touch!</button>
+            </div>
+        </div>
+        <hr>
+        <h3 class = "title">Projects</h3>
+        <div class = "projects" id = "project-section">
+            <div class = "project-item" onclick = "location.href='https://github.com/hanhng294/Airline_Satisfaction';">
+                <p class = "project-name">Airline Satisfaction</p>
+                <p>Predict customer satisfaction and examine important factors 
+                that affect the outcome to recommend areas of improvement.</p>
+                <p><strong>Topic</strong>: Machine Learning &#183; Data Analysis</p>
+                <div class = "tech-stack-list">
+                    <img src="code-solid.svg" class = "tech-stack">
+                    <p>Python</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class = "project-item" onclick = "location.href='https://github.com/hanhng294/News-Classification';">
+                <p class = "project-name">News Classification</p>
+                <p> Build predictive model that label news categories based on title content.</p>
+                <p><strong>Topic</strong>: Machine Learning &#183; Natural Language Processing</p>
+                <div class = "tech-stack-list">
+                    <img src="code-solid.svg" class = "tech-stack">
+                    <p>Python</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class = "project-item" onclick = "location.href='https://github.com/hanhng294/keyword_clustering';">
+                <p class = "project-name">Keyword Clustering</p>
+                <p> Takes keywords as input data and output clusters that group 
+                    similar keywords in a cluster. The model also selects a keyword that
+                     well represent the cluster to be the cluster topic</p>
+                <p><strong>Topic</strong>: Machine Learning &#183; Natural Language Processing</p>
+                <div class = "tech-stack-list">
+                    <img src="code-solid.svg" class = "tech-stack">
+                    <p>Python</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class = "project-item" onclick = "location.href='https://github.com/hanhng294/A-B-Testing-for-Marketing-Campaign';">
+                <p class = "project-name">A/B Testing for Marketing Campaigns</p>
+                <p> Compare 2 marketing campaigns - test and control. Evaluate
+                    key metrics and conclude whether the difference in their
+                    performance is statistically different
+                </p>
+                <p><strong>Topic</strong>: A/B Testing &#183; Hypothesis Testing &#183; Data Analysis</p>
+                <div class = "tech-stack-list">
+                    <img src="code-solid.svg" class = "tech-stack">
+                    <p>Python</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class = "project-item" onclick = "location.href='https://github.com/hanhng294/Personal_Expense';">
+                <p class = "project-name">Personal Expense Analysis</p>
+                <p> A dashboard analyzing my own spending and saving behaviours
+                    with data taken from my bank transaction from March - June of 2024
+                </p>
+                <p><strong>Topic</strong>: Data Visualization
+                <div class = "tech-stack-list">
+                    <img src="code-solid.svg" class = "tech-stack">
+                    <p>PowerBI</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class = "project-item" onclick = "location.href='https://graceng294.shinyapps.io/assignment2/';" target = "_blank">
+               <p class = "project-name">Spotify Users</p>
+                <p> The report aims to examine Spotify’s 
+                    customer patterns and preferences, for improving customer experience.
+                </p>
+                <p><strong>Topic</strong>: Data Visualization
+                <div class = "tech-stack-list">
+                    <img src="code-solid.svg" class = "tech-stack">
+                    <p>R</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3 class = "title" id = "work-section">Work Experience</h3>
+        <div class = "work-exp">
+            <div class = "work-item">
+                <div class = "workplace">British American Tobacco</div>
+                <div class ="work-description" >
+                    <div class = "work-title">Business Intelligence Intern</div>
+                    <div class = "tasks">
+                        <li> Involved in requirements gathering for
+                            reporting and automation projects with
+                            business stakeholders</li> 
+                        <li>Built front-end application for a machine
+                            learning project that predicts profit based on
+                            pricing strategies</li>
+                    </div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class = "workplace">Ericsson</div>
+                <div class ="work-description" >
+                    <div class = "work-title">Graduate Integration Engineer</div>
+                    <div class = "tasks">
+                        <li> Conduct testing for call flows in 4G/5G
+                            projects, including the development and
+                            execution of test cases. </li> 
+                        <li>Build machine learning models to optimize
+                            energy consumption within network
+                            infrastructure.</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3 class = "title">Activities</h3>
+        <div class = "activities" id = "activities-section">
+            <div class = "activities-text">
+                During my university years, I had the experience of getting involved 
+                in different types of societies (academic, hobbies, personal growth, etc.)
+                and getting to know people of diverse cultural and academic backgrounds.
+                This has helped me become more open-minded, communicative and collaborative
+                as well as meet amazing people and create wonderful memories. These experiences
+                have helped a lot with my self growth and made me who I am.
+            </div>
+            <div class = "activities-items">
+                <div class = "activity-wrapper">
+                    <img class = "activities-img" src = "activity1.png" >
+                    <div class = "act-content">
+                        <h4>UNSW Computer Science Engineering Society</h4>
+                        <p>I was in Competitions subcomittee where we 
+                            organized competitions for members. I learned to
+                            put together technical events and grew my passion coding
+                            by being with like-minded people.
+                        </p>
+                    </div>
+                </div>
+                <div class = "activity-wrapper">
+                    <img class = "activities-img" src = "activity2.png" >
+                    <div class = "act-content">
+                        <h4>UNSW Ministry of Dance Society</h4>
+                        <p>I was a regular member where I joined weekly
+                            classes. I made a lot of great friends as we shared
+                            common interest in dancing. We also did a showcase
+                            where we performed our dance moves in front of the audience.
+                        </p>
+                    </div>
+                </div>
+                <div class = "activity-wrapper">
+                    <img class = "activities-img" src = "activity3.png">
+                    <div class = "act-content">
+                        <h4>SUNY Plattsburgh American Marketing Association</h4>
+                        <p>As Vice President, I led creative initiatives and drove team engagement. 
+                            Our chapter competed in a cross-state competition in New Orleans, 
+                            where we won a prestigious Chapter Performance award, recognizing 
+                            our strategic excellence and collaboration.
+                        </p>
+                    </div>
+                </div>
+                <div class = "activity-wrapper">
+                    <img class = "activities-img" src = "activity4.png">
+                    <div class = "act-content">
+                        <h4>SUNY Plattsburgh Oratory Society</h4>
+                        <p>For a shy person like me, I never knew I could have co-founded
+                            a public speaking club. Neither did I expect to meet so many
+                            supportive people who share the same goal of self development.
+                            We organized 2 showcases with 80+ audiences during our year.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3 class = "title">Contact Me</h3>
+        <div class = "contact-items" id = "contact-section">
+            <div class = "info">
+                <img class = "contact-icon" src = "gmail.png">
+                <p>thuchanh2904@gmail.com</p>
+            </div>
+            <div class = "info">
+                <img class = "contact-icon" src = "linkedin.png">
+                <p>https://www.linkedin.com/in/grace-n-518b70124/</p>
+            </div>
+        </div>
+    <script src = "script.js"></script>
+    </body>
+</html>
